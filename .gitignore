@@ -1,0 +1,53 @@
+# Secrets — never commit API keys
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.cover
+
+# LLM / Agent runtime artifacts
+output/
+logs/
+reports/
+!reports/.gitkeep
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/generated/
+
+# RAG local stores
+.chroma/
+chroma/
+*.bin
+*.sqlite3
+
+# Evaluation run dumps (keep golden/ and metrics.md)
+evaluation/results/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
