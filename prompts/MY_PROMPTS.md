@@ -249,7 +249,7 @@ feat(agent): add tool selection
 
 不要执行 git commit。
 
-只生成 Commit Message。
+只生成 Commit Message 并后面接 (中文翻译)。
 
 ```
 
