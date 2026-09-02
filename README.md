@@ -6,9 +6,9 @@
 
 ## 进度总览
 
-> **当前周：** Week 1 · Day 2  
+> **当前周：** Week 1 · Day 3  
 > **开始日期：** 2026-09-01  
-> **已完成：** `1 / 140` 天 · `0 / 20` 周 · `1%`  
+> **已完成：** `2 / 140` 天 · `0 / 20` 周 · `1%`  
 > **所处阶段：** A · AI 测试使用者  
 > **进度条：** `░░░░░░░░░░░░░░░░░░░░` 0/20 周
 
@@ -77,7 +77,7 @@ L0 会提问  →  L1 会模板  →  L2 会做工具  →  L3 会接知识  →
 计划：[Week 1 详情](./LEARNING_PLAN.md#week-1)
 
 - [x] D1 工作日 · LLM / Token / Context 在测试里意味着什么
-- [ ] D2 工作日 · System vs User Prompt；温度对用例稳定性
+- [x] D2 工作日 · System vs User Prompt；温度对用例稳定性
 - [ ] D3 工作日 · DeepSeek JSON Mode（没有 json_schema）
 - [ ] D4 工作日 · 校验失败最多修复重试 1 次
 - [ ] D5 工作日 · token usage；封装 `complete_json()`
