@@ -1,2 +1,3 @@
 OpenAI==3.6.0
 dotenv
+pydantic
