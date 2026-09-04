@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 
@@ -35,24 +36,31 @@ class LLMClient:
             "content": None,
             "error": None,
             "success": False,
+            "duration": 0.0,
+            "model": model,
         }
         history = list(messages)
         last_error = None
 
         for attempt in range(1, max_attempts + 1):
+            start_time = datetime.datetime.now(datetime.UTC)
             response = self.client.chat.completions.create(
                 model=model,
                 messages=history,
                 temperature=temperature,
                 response_format=response_format,
             )
+            end_time = datetime.datetime.now(datetime.UTC)
             usage = response.usage
             result["usage"]["completion_tokens"] += usage.completion_tokens
             result["usage"]["prompt_tokens"] += usage.prompt_tokens
             result["usage"]["total_tokens"] += usage.total_tokens
+            
+            result["duration"] += (end_time - start_time).total_seconds()
             print(
                 f"attempt={attempt} prompt={usage.prompt_tokens} "
-                f"completion={usage.completion_tokens} total={usage.total_tokens}"
+                f"completion={usage.completion_tokens} total={usage.total_tokens} "
+                f"duration={result['duration']:.3f}s model={model}"
             )
 
             raw = response.choices[0].message.content
@@ -64,6 +72,7 @@ class LLMClient:
                     result["content"] = data
                 result["success"] = True
                 result["error"] = None
+                
                 return result
             except (json.JSONDecodeError, ValidationError) as e:
                 last_error = e
