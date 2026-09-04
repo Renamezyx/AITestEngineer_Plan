@@ -6,9 +6,9 @@
 
 ## 进度总览
 
-> **当前周：** Week 2 · Day 1  
+> **当前周：** Week 2 · Day 2  
 > **开始日期：** 2026-09-01  
-> **已完成：** `7 / 140` 天 · `1 / 20` 周 · `5%`  
+> **已完成：** `8 / 140` 天 · `1 / 20` 周 · `6%`  
 > **所处阶段：** A · AI 测试使用者  
 > **进度条：** `█░░░░░░░░░░░░░░░░░░░` 1/20 周
 
@@ -92,7 +92,7 @@ L0 会提问  →  L1 会模板  →  L2 会做工具  →  L3 会接知识  →
 目标：3 个可版本化 Prompt（测试点 / 用例 / Bug）。  
 计划：[Week 2 详情](./LEARNING_PLAN.md#week-2)
 
-- [ ] D1 · 四段式模板：Role / Context / Task / Constraints
+- [x] D1 · 四段式模板：Role / Context / Task / Constraints
 - [ ] D2 · Few-shot 正例 + 反例；PRD → 用例
 - [ ] D3 · Bug 分析必须绑证据；无日志不得给根因
 - [ ] D4 · Prompt 文件化；`prompts/render.py`

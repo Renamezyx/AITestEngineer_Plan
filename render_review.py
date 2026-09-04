@@ -6,7 +6,7 @@ import json
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_JSON = REPO_ROOT / "output" / "week01-points.json"
 DEFAULT_REVIEW = REPO_ROOT / "docs" / "week01-d6-review.md"
 
