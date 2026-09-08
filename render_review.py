@@ -32,7 +32,7 @@ def render_review_md(
     points_path: str = "output/week01-points.json",
     prompt_path: str = "prompts/test_points.v1.md",
 ) -> str:
-    test_points = payload.get("test_points") or []
+    test_points = payload.get("test_points") or payload.get("test_cases") or []
     unknown_gaps = payload.get("unknown_gaps") or []
     return "\n".join(
         [
