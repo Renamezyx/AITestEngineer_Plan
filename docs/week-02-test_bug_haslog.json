@@ -1,0 +1,5 @@
+{
+    "description": "同上，连续失败后第 5 次起正确密码也无法登录。",
+    "environment": "测试环境，Chrome。",
+    "log_slice": "2026-09-08 10:01:01 INFO login email=user@example.com result=fail reason=bad_password\n2026-09-08 10:01:08 INFO login email=user@example.com result=fail reason=bad_password\n2026-09-08 10:01:15 INFO login email=user@example.com result=fail count=5 action=lock duration=15m\n2026-09-08 10:01:20 INFO login email=user@example.com result=fail reason=account_locked"
+}
