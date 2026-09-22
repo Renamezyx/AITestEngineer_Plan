@@ -1,0 +1,3 @@
+prd_path,output,executability,coverage,hallucination,notes
+docs/test_prd.md,output/week01-points.json,4,5,4,登录PRD。可执行性：测试点标题可测但不是步骤级。覆盖：成功登录、统一错误文案、不泄露、失败5次、锁15分钟、锁定期内拒绝均有。幻觉：test_points未编验证码；「第5次失败仍提示账号或密码错误」PRD未写死文案，略推断。unknown_gaps使用合理。分制1差5好；幻觉5=几乎不编造。
+docs/test_prd_list.md,output/week02-points-list.json,4,5,5,订单列表PRD。可执行性：进入列表、倒序、三态筛选可操作。覆盖：查看列表、默认创建时间倒序、待支付/已支付/已取消筛选、切换筛选。幻觉：导出与批量删除进了unknown_gaps未进test_points。
